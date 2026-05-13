@@ -46,34 +46,41 @@ item.createdAt.day == now.day,
 
 return Scaffold(
   appBar: AppBar(title: const Text('Dashboard')),
-  body: ListView(
-    padding: const EdgeInsets.all(12),
-    children: [
-      DashboardMetricCard(
-        label: 'Total spent',
-        value: '$${totalSpent.toStringAsFixed(2)}',
-        icon: Icons.account_balance_wallet_outlined,
-        color: Colors.teal,
+  body: Container(
+    decoration: BoxDecoration(
+      image: DecorationImage(
+        image: const AssetImage('assets/download (1).png'),
+        fit: BoxFit.cover,
       ),
-      DashboardMetricCard(
-        label: "Today's spending",
-        value: '$${todaySpent.toStringAsFixed(2)}',
-        icon: Icons.today_outlined,
-        color: Colors.blue,
-      ),
-      DashboardMetricCard(
-        label: 'Tasks done',
-        value: '$doneCount / ${todos.length}',
-        icon: Icons.check_circle_outline,
-        color: Colors.green,
-      ),
-      DashboardMetricCard(
-        label: 'Tasks added today',
-        value: '$todayTasks',
-        icon: Icons.playlist_add_check_outlined,
-        color: Colors.orange,
-      ),
-    ],
+    ),
+    child: Column(
+      children: [
+        DashboardMetricCard(
+          label: 'Total spent',
+          value: '\$${totalSpent.toStringAsFixed(2)}',
+          icon: Icons.account_balance_wallet_outlined,
+          color: Colors.teal,
+        ),
+        DashboardMetricCard(
+          label: "Today's spending",
+          value: '\$${todaySpent.toStringAsFixed(2)}',
+          icon: Icons.today_outlined,
+          color: Colors.blue,
+        ),
+        DashboardMetricCard(
+          label: 'Tasks done',
+          value: '$doneCount / ${todos.length}',
+          icon: Icons.check_circle_outline,
+          color: Colors.green,
+        ),
+        DashboardMetricCard(
+          label: 'Tasks added today',
+          value: '$todayTasks',
+          icon: Icons.playlist_add_check_outlined,
+          color: Colors.orange,
+        ),
+      ],
+    ),
   ),
 );
 }
