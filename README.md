@@ -1,17 +1,77 @@
-# spend_wise
+# 💰 Spend Wise
 
-A new Flutter project.
+Spend Wise is a Flutter-based expense management and task tracking application that helps users manage their daily finances and organize tasks through a clean, intuitive, and offline-first experience.
 
-## Getting Started
+## ✨ Features
 
-This project is a starting point for a Flutter application.
+- 💸 Add and manage daily income and expenses
+- 📊 View financial summary on a dashboard
+- 📝 Create, update, and manage daily tasks
+- 💾 Offline data persistence using Shared Preferences
+- 📱 Responsive and user-friendly interface
+- 🎨 Clean Material Design with Google Fonts
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠️ Tech Stack
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- Flutter
+- Dart
+- Shared Preferences
+- Google Fonts
+- Intl
+- Material Design
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📁 Project Structure
+
+```text
+lib/
+├── models/
+│   ├── expense.dart
+│   └── todo.dart
+├── screens/
+│   ├── dashboard_screen.dart
+│   ├── expense_screen.dart
+│   └── todo_screen.dart
+├── widgets/
+│   ├── dashboard_metric_card.dart
+│   ├── expense_card.dart
+│   └── todo_tile.dart
+└── main.dart
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Flutter SDK (3.41 or later)
+- Android Studio / VS Code
+- Android Emulator or Physical Device
+
+### Installation
+
+```bash
+git clone https://github.com/Ira9181/Spendwise.git
+
+cd Spendwise-main
+
+flutter pub get
+
+flutter run
+```
+
+## 📸 Screenshots
+
+> Add screenshots of the Dashboard, Expense Tracker, and Task Manager here.
+
+## 🔮 Future Enhancements
+
+- Expense categories and filters
+- Monthly analytics and charts
+- Budget planning
+- Data backup and restore
+- Export reports to PDF/Excel
+
+## 👩‍💻 Author
+
+**Ira Ratan Vatsyayan**
+
+GitHub: https://github.com/Ira9181
